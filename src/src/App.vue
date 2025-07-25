@@ -2,7 +2,7 @@
 	<t-layout>
 		<t-header class="flex items-center !bg-transparent mb-8">
 			<div class="px-6 flex items-center">
-				<img src="/logo.svg" class="h-8 mr-2" />
+				<img src="@/assets/logo.svg" class="h-8 mr-2" />
 				<h4 class="text-lg font-mono font-bold">Toolbox</h4>
 			</div>
 			<div class="ml-auto px-6">

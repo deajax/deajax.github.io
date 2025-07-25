@@ -88,7 +88,7 @@
 				</t-tab-panel>
 			</t-tabs>
 		</div>
-		<t-layout class="!bg-white">
+		<t-layout class="!bg-white dark:!bg-transparent">
 			<div class="container pt-24 mx-auto flex">
 				<!-- <t-aside class="mr-16">
 					<t-menu width="240px">
@@ -137,11 +137,15 @@
 
 <script setup>
 	import { ref, reactive } from "vue";
+	import { useStore } from "vuex";
 
+	const store = useStore();
 	const theme = ref("light");
+
 	const changeTheme = (value) => {
 		document.documentElement.setAttribute("theme-mode", value);
-		dispatch("setGlobalCacheData", { key: "themeMode", value });
+		// 使用 Vuex 的 dispatch
+		store.dispatch("setGlobalCacheData", { key: "themeMode", value });
 	};
 
 	const searchForm = reactive({

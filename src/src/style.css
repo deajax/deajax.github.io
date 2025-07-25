@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+[theme-mode="dark"] body {
+    background: var(--td-bg-color-page);
+}

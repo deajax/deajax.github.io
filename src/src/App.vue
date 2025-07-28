@@ -1,135 +1,127 @@
 <template>
-	<t-layout>
-		<t-header class="flex items-center !bg-transparent mb-8">
+	<a-layout>
+		<a-header class="flex items-center py-2 mb-8">
 			<div class="px-6 flex items-center">
 				<img src="@/assets/logo.svg" class="h-8 mr-2" />
 				<h4 class="text-lg font-mono font-bold">Toolbox</h4>
 			</div>
 			<div class="ml-auto px-6">
-				<t-radio-group
-					v-model="theme"
-					variant="default-filled"
-					@change="changeTheme"
-				>
-					<t-radio-button value="light">
-						<i class="ri-sun-fill"></i>
-					</t-radio-button>
-					<t-radio-button value="dark">
-						<i class="ri-moon-fill"></i>
-					</t-radio-button>
-				</t-radio-group>
+				<a-space align="center">
+					<a-button type="text" @click="openGitHub" size="large">
+						<template #icon>
+							<i class="ri-github-fill ri-xl"></i>
+						</template>
+					</a-button>
+					<!-- <t-radio-group
+						v-model="theme"
+						variant="default-filled"
+						@change="changeTheme"
+						style="--td-comp-paddingLR-l: 12px"
+					>
+						<t-radio-button value="light">
+							<i class="ri-sun-fill"></i>
+						</t-radio-button>
+						<t-radio-button value="dark">
+							<i class="ri-moon-fill"></i>
+						</t-radio-button>
+					</t-radio-group> -->
+				</a-space>
 			</div>
-		</t-header>
-		<div class="relative z-10 w-[800px] mx-auto -mb-8">
-			<t-tabs theme="card" :default-value="1" class="shadow-lg">
-				<t-tab-panel :value="1">
-					<template #label>
+		</a-header>
+		<div class="search-bar relative z-10 w-[800px] mx-auto -mb-8 drop-shadow-lg">
+			<a-tabs v-model:activeKey="activeKey" type="card">
+				<a-tab-pane key="baidu">
+					<template #tab>
 						<i class="ri-baidu-fill mr-1"></i>
 						<span>百度</span>
 					</template>
-					<div class="p-3">
-						<t-form
-							@submit="onSubmitBaidu"
-							:data="searchForm"
-							class="flex items-center"
+					<div class="p-3 bg-white">
+						<a-input-search
+							v-model:value="searchForm.keywords"
+							size="large"
+							placeholder="百度一下，你就知道"
+							:bordered="false"
+							@search="onSubmitBaidu"
 						>
-							<t-input
-								v-model="searchForm.keywords"
-								size="large"
-								placeholder="百度一下，你就知道"
-								type="search"
-								class="[&_.t-input.t-size-l]:py-2 [&_.t-input.t-size-l]:h-auto"
-								borderless
-							>
-								<template #prefixIcon>
-									<i class="ri-lg ri-baidu-fill text-blue-700 mr-1"></i>
-								</template>
-							</t-input>
-							<div class="ml-2">
-								<t-button theme="primary" size="large" type="submit">
-									<i class="ri-search-2-line text-xl"></i>
-								</t-button>
-							</div>
-						</t-form>
+							<template #prefix>
+								<i class="ri-lg ri-baidu-fill text-blue-700 mr-2"></i>
+							</template>
+							<template #enterButton>
+								<a-button class="!rounded-md" type="primary" size="large">
+									<template #icon>
+										<i class="ri-search-2-line"></i>
+									</template>
+								</a-button>
+							</template>
+						</a-input-search>
 					</div>
-				</t-tab-panel>
-				<t-tab-panel :value="2">
-					<template #label>
+				</a-tab-pane>
+				<a-tab-pane key="google">
+					<template #tab>
 						<i class="ri-google-fill mr-1"></i>
 						<span>Google</span>
 					</template>
-					<div class="p-3">
-						<t-form
-							@submit="onSubmitGoogle"
-							:data="searchForm"
-							class="flex items-center"
+					<div class="p-3 bg-white">
+						<a-input-search
+							v-model:value="searchForm.keywords"
+							size="large"
+							placeholder="在 Google 中搜索，或输入网址"
+							:bordered="false"
+							@search="onSubmitGoogle"
 						>
-							<t-input
-								v-model="searchForm.keywords"
-								size="large"
-								placeholder="在 Google 中搜索，或输入网址"
-								type="search"
-								class="[&_.t-input.t-size-l]:py-2 [&_.t-input.t-size-l]:h-auto"
-								borderless
-							>
-								<template #prefixIcon>
-									<i
-										class="ri-lg ri-google-fill text-blue-700 mr-1"
-									></i>
-								</template>
-							</t-input>
-							<div class="ml-2">
-								<t-button theme="primary" size="large" type="submit">
-									<i class="ri-search-2-line text-xl"></i>
-								</t-button>
-							</div>
-						</t-form>
+							<template #prefix>
+								<i class="ri-lg ri-google-fill text-blue-700 mr-2"></i>
+							</template>
+							<template #enterButton>
+								<a-button class="!rounded-md" type="primary" size="large">
+									<template #icon>
+										<i class="ri-search-2-line"></i>
+									</template>
+								</a-button>
+							</template>
+						</a-input-search>
 					</div>
-				</t-tab-panel>
-			</t-tabs>
+				</a-tab-pane>
+			</a-tabs>
 		</div>
-		<t-layout class="!bg-white dark:!bg-transparent">
-			<div class="pt-24 px-16 flex">
-				<t-aside class="mr-16">
-					<t-menu width="160px">
-						<t-menu-item value="0">
-							<template #icon>
-								<i class="ri-earth-line ri-lg mr-4 text-black"></i>
-							</template>
-							常用导航
-						</t-menu-item>
-						<t-menu-item value="1">
-							<template #icon>
-								<i class="ri-tools-fill ri-lg mr-4 text-black"></i>
-							</template>
-							实用工具
-						</t-menu-item>
-						<t-menu-item value="2">
-							<template #icon>
-								<i class="ri-ai-generate-2 ri-lg mr-4 text-black"></i>
-							</template>
-							AI工具
-						</t-menu-item>
-						<t-menu-item value="2">
-							<template #icon>
-								<i class="ri-multi-image-fill ri-lg mr-4 text-black"></i>
-							</template>
-							素材资源
-						</t-menu-item>
-						<t-menu-item value="3">
-							<template #icon>
-								<i class="ri-game-line ri-lg mr-4 text-black"></i>
-							</template>
-							休闲娱乐
-						</t-menu-item>
-					</t-menu>
-				</t-aside>
-				<t-content class="pr-56">
-					<router-view />
-				</t-content>
+		<a-layout class="!bg-white dark:!bg-transparent">
+			<div class="pt-24 px-16 flex flex-1">
+				<a-content class="pl-72">
+					<div
+						:id="item.title"
+						class="mb-16"
+						v-for="(item, index) in dataList"
+						:key="index"
+					>
+						<template v-if="item.list && item.list.length > 0">
+							<div class="mb-8 flex items-center">
+								<i
+									class="mr-3 text-blue-700"
+									:class="`ri-xl ri-${item.icon}`"
+								></i>
+								<h4 class="text-xl font-bold">{{ item.title }}</h4>
+							</div>
+							<data-source :data="item.list" />
+						</template>
+					</div>
+				</a-content>
+				<a-aside class="ml-14">
+					<t-anchor
+						:affix-props="{ offsetTop: 150 }"
+						:container="container"
+						:bounds="106"
+					>
+						<t-anchor-item
+							v-for="(item, index) in dataList"
+							:key="index"
+							:href="`#${item.title}`"
+							:title="item.title"
+						/>
+					</t-anchor>
+				</a-aside>
 			</div>
-		</t-layout>
-	</t-layout>
+		</a-layout>
+	</a-layout>
 
 	<t-back-top
 		theme="primary"
@@ -141,14 +133,17 @@
 <script setup>
 	import { ref, reactive } from "vue";
 	import { useStore } from "vuex";
+	import dataSource from "@/components/dataSource.vue";
+	import data from "@/data.json";
 
+	const activeKey = ref("baidu");
+	const dataList = ref(data);
 	const store = useStore();
-	const theme = ref("light");
+	const theme = ref(false);
 
 	const changeTheme = (value) => {
-		document.documentElement.setAttribute("theme-mode", value);
-		// 使用 Vuex 的 dispatch
-		store.dispatch("setGlobalCacheData", { key: "themeMode", value });
+		document.documentElement.setAttribute("theme-mode", "dark");
+		store.dispatch("setGlobalCacheData", { key: "themeMode", value: "dark" });
 	};
 
 	const searchForm = reactive({
@@ -163,12 +158,33 @@
 		const encodedKeywords = encodeURIComponent(searchForm.keywords);
 		window.open(`https://www.google.com/search?q=${encodedKeywords}`, "_blank");
 	};
+
+	const openGitHub = () => {
+		window.open("https://github.com/deajax/toolbox", "_blank");
+	};
 </script>
 
 <style lang="less" scoped>
 	:deep(.t-default-menu) {
 		&__inner .t-menu {
 			padding: 0;
+		}
+	}
+
+	.search-bar {
+		:deep(.ant-tabs) {
+			.ant-tabs-nav {
+				margin-bottom: 0;
+
+				&::before {
+					display: none;
+				}
+			}
+			.ant-tabs-tab {
+				border: 0;
+				border-radius: 0;
+				padding: 12px 16px;
+			}
 		}
 	}
 </style>

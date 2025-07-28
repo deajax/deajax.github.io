@@ -5,8 +5,7 @@ import 'remixicon/fonts/remixicon.css'
 import './style.css'
 
 import App from './App.vue'
-import router from './router'
 import store from './store'
 import TDesign from 'tdesign-vue-next';
 
-createApp(App).use(router).use(store).use(TDesign).mount('#app')
+createApp(App).use(store).use(TDesign).mount('#app')

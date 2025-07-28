@@ -89,39 +89,42 @@
 			</t-tabs>
 		</div>
 		<t-layout class="!bg-white dark:!bg-transparent">
-			<div class="container pt-24 mx-auto flex">
-				<!-- <t-aside class="mr-16">
-					<t-menu width="240px">
+			<div class="pt-24 px-16 flex">
+				<t-aside class="mr-16">
+					<t-menu width="160px">
 						<t-menu-item value="0">
 							<template #icon>
-								<t-icon name="app" />
+								<i class="ri-earth-line ri-lg mr-4 text-black"></i>
 							</template>
-							仪表盘
+							常用导航
 						</t-menu-item>
-						<t-submenu value="1" title="资源列表">
+						<t-menu-item value="1">
 							<template #icon>
-								<t-icon name="code" />
+								<i class="ri-tools-fill ri-lg mr-4 text-black"></i>
 							</template>
-							<t-menu-item value="1-1" disabled>
-								<span>菜单二</span>
-							</t-menu-item>
-						</t-submenu>
-						<t-submenu value="2" title="调度平台">
+							实用工具
+						</t-menu-item>
+						<t-menu-item value="2">
 							<template #icon>
-								<t-icon name="file" />
+								<i class="ri-ai-generate-2 ri-lg mr-4 text-black"></i>
 							</template>
-							<t-submenu value="2-1" title="二级菜单-1">
-								<t-menu-item value="3-1">三级菜单-1</t-menu-item>
-								<t-menu-item value="3-2">三级菜单-2</t-menu-item>
-								<t-menu-item value="3-3">三级菜单-3</t-menu-item>
-							</t-submenu>
-							<t-menu-item value="2-2">
-								<span>二级菜单-2</span>
-							</t-menu-item>
-						</t-submenu>
+							AI工具
+						</t-menu-item>
+						<t-menu-item value="2">
+							<template #icon>
+								<i class="ri-multi-image-fill ri-lg mr-4 text-black"></i>
+							</template>
+							素材资源
+						</t-menu-item>
+						<t-menu-item value="3">
+							<template #icon>
+								<i class="ri-game-line ri-lg mr-4 text-black"></i>
+							</template>
+							休闲娱乐
+						</t-menu-item>
 					</t-menu>
-				</t-aside> -->
-				<t-content>
+				</t-aside>
+				<t-content class="pr-56">
 					<router-view />
 				</t-content>
 			</div>

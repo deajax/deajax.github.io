@@ -15,16 +15,16 @@
         fill: url(#_未命名的渐变);
       }
     </style>
-    <linearGradient id="_未命名的渐变" data-name="未命名的渐变" x1="14.6" y1="3.6" x2="16.5" y2="26.9" gradientTransform="translate(0 34) scale(1 -1)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="_未命名的渐变" data-name="未命名的渐变" x1="14.8" y1="1592.2" x2="16.4" y2="1572.1" gradientTransform="translate(0 -1566)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#41d1ff"/>
       <stop offset="1" stop-color="#bd34fe"/>
     </linearGradient>
-    <linearGradient id="_未命名的渐变_2" data-name="未命名的渐变 2" x1="15.3" y1="1.2" x2="17.2" y2="25.8" gradientTransform="translate(0 34) scale(1 -1)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="_未命名的渐变_2" data-name="未命名的渐变 2" x1="15.4" y1="1594.3" x2="17" y2="1573.1" gradientTransform="translate(0 -1566)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#41d1ff"/>
       <stop offset="1" stop-color="#bd34fe"/>
     </linearGradient>
   </defs>
-  <path class="st2" d="M29.9,16.4v-5.7c0-2.2-1.8-4-4-4H6c-2.2,0-4,1.8-4,4v5.7h27.9Z"/>
-  <path class="st0" d="M2,19.7v8.2c0,2.2,1.8,4,4,4h19.9c2.2,0,4-1.8,4-4v-8.2H2Z"/>
-  <path class="st1" d="M21.3,0l-12.3,2.4c-.2,0-.3.2-.3.4l-.8,12.8c0,.2.2.4.4.4h.1l3.4-.8c.3,0,.6.2.6.6l-1,5c0,.3.2.7.6.6l2.1-.7c.3,0,.7.2.6.6l-1.7,7.9c0,.4.6.8.8.3l.2-.3,10-20c.2-.3-.1-.7-.4-.7l-3.6.7c-.3,0-.7-.2-.6-.6L21.8.7C21.8.3,21.5,0,21.2.1h.1Z"/>
+  <path class="st2" d="M28,14.1v-4.9c0-1.9-1.6-3.4-3.4-3.4H7.4c-1.9,0-3.4,1.6-3.4,3.4v4.9h24Z"/>
+  <path class="st0" d="M3.9,17v7.1c0,1.9,1.6,3.4,3.4,3.4h17.2c1.9,0,3.4-1.6,3.4-3.4v-7.1H3.9Z"/>
+  <path class="st1" d="M20.6,0l-10.6,2.1c-.2,0-.3.2-.3.3l-.7,11c0,.2.2.3.3.3h0l2.9-.7c.3,0,.5.2.5.5l-.9,4.3c0,.3.2.6.5.5l1.8-.6c.3,0,.6.2.5.5l-1.5,6.8c0,.3.5.7.7.3l.2-.3L22.9,7.9c.2-.3,0-.6-.3-.6l-3.1.6c-.3,0-.6-.2-.5-.5l2.1-6.8c0-.3-.3-.6-.5-.5h0,0Z"/>
 </svg>

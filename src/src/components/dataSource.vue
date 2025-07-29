@@ -1,30 +1,23 @@
 <template>
-	<t-row :gutter="[24, 24]">
-		<t-col v-for="(item, index) in data" :key="index" :span="3">
-			<t-card @click.stop="clickHandler(item)" :title="item.title" hover-shadow>
-				<template v-if="item.icon" #avatar>
-					<img :src="item.icon" class="w-full h-full block object-cover" />
-				</template>
-				<template #actions>
-					<t-dropdown
-						:options="options"
-						placement="right"
-						@click="feedbackHandler"
-					>
-						<i class="ri-more-fill text-black"></i>
-					</t-dropdown>
-				</template>
-				<t-typography-text class="!m-0" theme="secondary" ellipsis>
-					{{ item.description }}
-				</t-typography-text>
-			</t-card>
-		</t-col>
-	</t-row>
+	<a-row :gutter="[24, 24]">
+		<a-col v-for="(item, index) in data" :key="index" :span="6">
+			<a-card @click.stop="clickHandler(item)" hoverable>
+				<a-card-meta :title="item.title" :description="item.description">
+					<template #avatar>
+						<img
+							v-if="item.icon"
+							:src="item.icon"
+							class="w-full h-full block object-cover"
+						/>
+						<i v-else class="ri-earth-line ri-xl opacity-25"></i>
+					</template>
+				</a-card-meta>
+			</a-card>
+		</a-col>
+	</a-row>
 </template>
 
 <script setup>
-	import { h } from "vue";
-
 	const props = defineProps({
 		data: {
 			type: Array,
@@ -32,42 +25,34 @@
 		},
 	});
 
-	const options = [
-		{
-			content: "反馈",
-			value: 1,
-			prefixIcon: () => h("i", { class: "ri-draft-line" }),
-		},
-	];
-
-	const feedbackHandler = (data) => {
-		if (data.value === 1) {
-			window.open("https://github.com/deajax/toolbox/issues/new");
-		}
-	};
-
 	const clickHandler = (item) => {
 		window.open(item.url, "_blank");
 	};
 </script>
 
 <style lang="less" scoped>
-	:deep(.t-card) {
+	:deep(.ant-card) {
 		cursor: pointer;
-		padding: 4px 0;
+		// padding: 4px 0;
 
-		&__avatar {
-			width: 16px;
-			height: 16px;
-			margin-right: 8px;
-		}
+		&-meta {
+			&-avatar {
+				width: 20px;
+				height: 20px;
+				padding: 0;
+				margin: 2px 0 0 0;
+				overflow: hidden;
+			}
 
-		&__header {
-			padding-bottom: 0;
-		}
+			&-detail {
+				margin-left: 8px;
+			}
 
-		&__body {
-			padding-top: 12px;
+			&-description {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
 		}
 	}
 </style>

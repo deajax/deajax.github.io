@@ -5,7 +5,7 @@
 				<a-card-meta :title="item.title" :description="item.description">
 					<template #avatar>
 						<img
-							v-if="item.icon"
+							v-if="item.icon && item.icon.length > 0"
 							:src="item.icon"
 							class="w-full h-full block object-cover"
 						/>

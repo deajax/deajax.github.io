@@ -51,7 +51,8 @@
             {
                 "title": "博客园",
                 "description": "开发者的网上家园",
-                "url": "https://www.cnblogs.com/"
+                "url": "https://www.cnblogs.com/",
+                "icon": "https://favicon.im/www.cnblogs.com"
             },
             {
                 "title": "SegmentFault 思否",
@@ -131,6 +132,12 @@
                 "description": "最流行的浏览器扩展之一",
                 "url": "https://www.tampermonkey.net/",
                 "icon": "https://www.tampermonkey.net/favicon.ico"
+            },
+            {
+                "title": "Favicon.im",
+                "description": "即时获取和下载任何网站的图标",
+                "url": "https://favicon.im/zh/",
+                "icon": "https://favicon.im/Favicon.im?larger=true"
             }
         ]
     },
@@ -316,7 +323,7 @@
                 "title": "哔哩哔哩",
                 "description": "国内知名的视频弹幕网站",
                 "url": "https://www.bilibili.com",
-                "icon": "https://i0.hdslb.com/bfs/static/jinkela/long/images/favicon.ico"
+                "icon": "https://favicon.im/www.bilibili.com?larger=true"
             },
             {
                 "title": "米游社",

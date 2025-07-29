@@ -15,6 +15,11 @@
 						></i>
 					</template>
 				</a-card-meta>
+				<div class="ab absolute top-0 right-0 p-2 leading-none" v-if="item.vpn">
+					<a-tooltip title="需要vpn" placement="top">
+						<i class="ri-key-fill text-orange-600"></i>
+					</a-tooltip>
+				</div>
 			</a-card>
 		</a-col>
 	</a-row>

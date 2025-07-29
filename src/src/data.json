@@ -14,13 +14,21 @@
                 "title": "Google 谷歌",
                 "description": "汇整全球信息，供大众使用，使人人受惠",
                 "url": "https://www.google.com/",
-                "icon": "//www.gstatic.com/images/branding/searchlogo/ico/favicon.ico"
+                "icon": "//www.gstatic.com/images/branding/searchlogo/ico/favicon.ico",
+                "vpn": true
             },
             {
                 "title": "Microsoft 必应",
                 "description": "为永远充满好奇心的人提供的智能搜索引擎",
                 "url": "https://www.bing.com/",
                 "icon": "https://www.bing.com/sa/simg/favicon-trans-bg-blue-mg-png.png"
+            },
+            {
+                "title": "Github",
+                "description": "知名开源项目托管平台",
+                "url": "https://github.com/",
+                "icon": "https://github.githubassets.com/favicons/favicon.svg",
+                "vpn": true
             },
             {
                 "title": "淘宝",
@@ -74,12 +82,6 @@
                 "description": "百度网盘为您提供文件的网络备份、同步和分享服务",
                 "url": "https://pan.baidu.com/",
                 "icon": "https://nd-static.bdstatic.com/m-static/v20-main/favicon-main.ico"
-            },
-            {
-                "title": "Github",
-                "description": "知名开源项目托管平台",
-                "url": "https://github.com/",
-                "icon": "https://github.githubassets.com/favicons/favicon.svg"
             }
         ]
     },
@@ -114,8 +116,8 @@
             },
             {
                 "title": "GLaDOS",
-                "description": "GLaDOS是值得信赖的网络管理器",
-                "url": "https://glados.one/",
+                "description": "值得信赖的VPN网络工具",
+                "url": "https://rz5sf-higb2-esli0-0ktdu.glados.space",
                 "icon": "https://glados.one/favicon.ico"
             },
             {
@@ -123,6 +125,12 @@
                 "description": "通过将SVG图形编码，在CSS中使用SVG背景图片",
                 "url": "https://deajax.github.io/encodeSVG/#/",
                 "icon": "https://deajax.github.io/encodeSVG/favicon.ico"
+            },
+            {
+                "title": "篡改猴 Tampermonkey",
+                "description": "最流行的浏览器扩展之一",
+                "url": "https://www.tampermonkey.net/",
+                "icon": "https://www.tampermonkey.net/favicon.ico"
             }
         ]
     },
@@ -227,6 +235,25 @@
                 "description": "提供各类字体的免费下载和在线预览服务",
                 "url": "https://www.fonts.net.cn/",
                 "icon": "https://www.fonts.net.cn/favicon.ico"
+            }
+        ]
+    },
+    {
+        "icon": "app-store-line",
+        "href": "#软件程序资源",
+        "title": "软件程序资源",
+        "list": [
+            {
+                "title": "果核剥壳",
+                "description": "还原软件的本质",
+                "url": "https://www.ghxi.com/",
+                "icon": "https://www.ghxi.com/favicon.ico"
+            },
+            {
+                "title": "MacWk",
+                "description": "精品mac软件下载",
+                "url": "https://www.macwk.com",
+                "icon": "https://www.macwk.com/favicon-32x32.ico"
             }
         ]
     },

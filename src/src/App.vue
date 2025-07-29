@@ -8,17 +8,18 @@
 			<div class="ml-auto">
 				<a-space align="center">
 					<a-tooltip title="GitHub" placement="bottom">
-						<a-button @click="openGitHub" size="large" type="text">
+						<a-button @click="openGitHub" class="bg-transparent">
 							<template #icon>
-								<i class="ri-github-fill ri-xl"></i>
+								<i class="ri-github-fill ri-lg"></i>
 							</template>
 						</a-button>
 					</a-tooltip>
 					<a-tooltip title="反馈" placement="bottom">
-						<a-button @click="feedback" size="large" type="text">
+						<a-button @click="feedback" type="text" class="bg-gray-200">
 							<template #icon>
-								<i class="ri-feedback-fill ri-lg"></i>
+								<i class="ri-edit-2-line mr-2"></i>
 							</template>
+							<span class="text-xs">问题反馈</span>
 						</a-button>
 					</a-tooltip>
 				</a-space>
@@ -186,7 +187,7 @@
 
 <style lang="less" scoped>
 	.toolbox {
-		background: linear-gradient(260deg, #f5f7fc 0%, rgba(245, 247, 252, 0.2) 100%);
+		background: linear-gradient(260deg, #f3f4f6 0%, #f9fafb 100%);
 	}
 
 	.search-bar {

@@ -5,28 +5,81 @@
         "title": "常用导航",
         "list": [
             {
-                "icon": "https://www.google.com/s2/favicons?sz=64&domain=baidu.com",
                 "title": "百度",
                 "description": "百度一下，你就知道",
-                "url": "https://www.baidu.com/"
+                "url": "https://www.baidu.com/",
+                "icon": "https://www.google.com/s2/favicons?sz=64&domain=baidu.com"
             },
             {
-                "icon": "//www.gstatic.com/images/branding/searchlogo/ico/favicon.ico",
                 "title": "Google 谷歌",
                 "description": "汇整全球信息，供大众使用，使人人受惠",
-                "url": "https://www.google.com/"
+                "url": "https://www.google.com/",
+                "icon": "//www.gstatic.com/images/branding/searchlogo/ico/favicon.ico"
             },
             {
-                "icon": "https://www.bing.com/sa/simg/favicon-trans-bg-blue-mg-png.png",
                 "title": "Microsoft 必应",
                 "description": "为永远充满好奇心的人提供的智能搜索引擎",
-                "url": "https://www.bing.com/"
+                "url": "https://www.bing.com/",
+                "icon": "https://www.bing.com/sa/simg/favicon-trans-bg-blue-mg-png.png"
             },
             {
-                "icon": "https://static.zhihu.com/heifetz/favicon.ico",
+                "title": "淘宝",
+                "description": "亚洲较大的网上交易平台",
+                "url": "https://www.taobao.com/",
+                "icon": "//img.alicdn.com/tps/i3/T1OjaVFl4dXXa.JOZB-114-114.png"
+            },
+            {
+                "title": "京东",
+                "description": "正品低价、品质保障、配送及时、轻松购物！",
+                "url": "https://www.jd.com/",
+                "icon": "//www.jd.com/favicon.ico"
+            },
+            {
                 "title": "知乎",
                 "description": "中文互联网高质量的问答社区和创作者聚集的原创内容平台",
-                "url": "https://www.zhihu.com/"
+                "url": "https://www.zhihu.com/",
+                "icon": "https://static.zhihu.com/heifetz/favicon.ico"
+            },
+            {
+                "title": "博客园",
+                "description": "开发者的网上家园",
+                "url": "https://www.cnblogs.com/"
+            },
+            {
+                "title": "SegmentFault 思否",
+                "description": "思否是中国专业的开发者技术社区",
+                "url": "https://segmentfault.com/",
+                "icon": "https://static.segmentfault.com/main_site_next/prod/favicon.ico"
+            },
+            {
+                "title": "CSDN_专业开发者社区",
+                "description": "CSDN是全球知名中文IT技术交流平台",
+                "url": "https://www.csdn.net/",
+                "icon": "https://g.csdnimg.cn/static/logo/favicon32.ico"
+            },
+            {
+                "title": "百度翻译",
+                "description": "领先的AI大模型翻译",
+                "url": "https://fanyi.baidu.com/",
+                "icon": "https://fanyi.baidu.com/favicon.ico"
+            },
+            {
+                "title": "百度地图",
+                "description": "浏览地图、搜索地点、查询公交驾车线路、查看实时路况，您的出行指南、生活助手",
+                "url": "https://map.baidu.com/",
+                "icon": "https://map.baidu.com/favicon.ico"
+            },
+            {
+                "title": "百度网盘",
+                "description": "百度网盘为您提供文件的网络备份、同步和分享服务",
+                "url": "https://pan.baidu.com/",
+                "icon": "https://nd-static.bdstatic.com/m-static/v20-main/favicon-main.ico"
+            },
+            {
+                "title": "Github",
+                "description": "知名开源项目托管平台",
+                "url": "https://github.com/",
+                "icon": "https://github.githubassets.com/favicons/favicon.svg"
             }
         ]
     },
@@ -34,36 +87,216 @@
         "icon": "tools-line",
         "href": "#实用工具",
         "title": "实用工具",
-        "list": []
+        "list": [
+            {
+                "title": "草料二维码",
+                "description": "一站式二维码生成工具",
+                "url": "https://cli.im/",
+                "icon": "https://static.clewm.net/static/images/favicon.ico"
+            },
+            {
+                "title": "iconfont-阿里巴巴矢量图标库",
+                "description": "国内功能很强大且图标内容很丰富的矢量图标库",
+                "url": "https://www.iconfont.cn",
+                "icon": "https://img.alicdn.com/imgextra/i4/O1CN01Z5paLz1O0zuCC7osS_!!6000000001644-55-tps-83-82.svg"
+            },
+            {
+                "title": "IconPark",
+                "description": "IconPark, park your icon",
+                "url": "https://iconpark.oceanengine.com/",
+                "icon": "https://lf1-cdn2-tos.bytegoofy.com/bydesign/iconparksite/logo.svg"
+            },
+            {
+                "title": "Remix Icon",
+                "description": "Remix Icon is a set of open source neutral style system symbols elaborately crafted for designers and developers.",
+                "url": "https://remixicon.com",
+                "icon": "https://www.remixicon.com/img/remixicon-logo.svg"
+            },
+            {
+                "title": "GLaDOS",
+                "description": "GLaDOS是值得信赖的网络管理器",
+                "url": "https://glados.one/",
+                "icon": "https://glados.one/favicon.ico"
+            },
+            {
+                "title": "SVG图形编码工具",
+                "description": "通过将SVG图形编码，在CSS中使用SVG背景图片",
+                "url": "https://deajax.github.io/encodeSVG/#/",
+                "icon": "https://deajax.github.io/encodeSVG/favicon.ico"
+            }
+        ]
     },
     {
         "icon": "terminal-box-line",
         "href": "#开发者资源",
         "title": "开发者资源",
-        "list": []
+        "list": [
+            {
+                "title": "Tailwind CSS",
+                "description": "只需书写 HTML 代码，无需书写 CSS，即可快速构建美观的网站",
+                "url": "https://www.tailwindcss.cn/",
+                "icon": "https://www.tailwindcss.cn/favicons/favicon-32x32.png?v=3"
+            },
+            {
+                "title": "Ant Design Vue",
+                "description": "Ant Design 的 Vue 实现，开发和服务于企业级后台产品。",
+                "url": "https://www.antdv.com/",
+                "icon": "https://aliyuncdn.antdv.com/favicon.ico"
+            },
+            {
+                "title": "TDesign",
+                "description": "开源的企业级设计体系，为设计师 & 开发者，打造工作美学",
+                "url": "https://tdesign.tencent.com/",
+                "icon": "https://static.tdesign.tencent.com/favicon.ico"
+            },
+            {
+                "title": "Vant 4",
+                "description": "Vant 是一个轻量、可定制的移动端组件库",
+                "url": "https://vant-ui.github.io/vant/",
+                "icon": "https://fastly.jsdelivr.net/npm/@vant/assets/logo.png"
+            },
+            {
+                "title": "uni-app",
+                "description": "一套代码，运行到多个平台",
+                "url": "https://uniapp.dcloud.net.cn",
+                "icon": "https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/icon.png"
+            },
+            {
+                "title": "微信开放文档",
+                "description": "微信开发者平台文档",
+                "url": "https://developers.weixin.qq.com/miniprogram/dev/framework/",
+                "icon": "https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico"
+            },
+            {
+                "title": "支付宝小程序文档",
+                "description": "支付宝文档中心",
+                "url": "https://opendocs.alipay.com/mini",
+                "icon": "https://img.alicdn.com/tfs/TB1qEwuzrj1gK0jSZFOXXc7GpXa-32-32.ico"
+            }
+        ]
     },
     {
         "icon": "palette-line",
         "href": "#设计资源",
         "title": "设计资源",
-        "list": []
+        "list": [
+            {
+                "title": "站酷ZCOOL",
+                "description": "打开站酷,发现更好的设计!",
+                "url": "https://www.zcool.com.cn",
+                "icon": "//static.zcool.cn/git_z/z/site/favicon.ico"
+            },
+            {
+                "title": "UICN用户体验设计平台",
+                "description": "UI中国用户体验平台,中国用户体验联盟理事单位",
+                "url": "https://www.ui.cn",
+                "icon": "https://www.ui.cn/Public/img/favicon.ico"
+            },
+            {
+                "title": "花瓣网",
+                "description": "陪你做生活的设计师（创意灵感天堂，搜索、发现设计灵感、设计素材）",
+                "url": "https://huaban.com/",
+                "icon": "https://huaban.com/favicon.ico"
+            },
+            {
+                "title": "摄图网",
+                "description": "正版高清图片下载 商用设计素材图库",
+                "url": "https://699pic.com",
+                "icon": "https://699pic.com/favicon.ico"
+            },
+            {
+                "title": "千库网",
+                "description": "商用版权设计素材图库",
+                "url": "https://588ku.com",
+                "icon": "https://588ku.com/favicon.ico"
+            },
+            {
+                "title": "昵图网",
+                "description": "原创素材共享平台",
+                "url": "https://www.nipic.com/",
+                "icon": "https://static.ntimg.cn/original/images/favicon.ico"
+            },
+            {
+                "title": "字体灵感",
+                "description": "为字体设计者提供字体设计展示平台",
+                "url": "http://ziti.cndesign.com/",
+                "icon": "http://ziti.cndesign.com/favicon.ico"
+            },
+            {
+                "title": "字体天下",
+                "description": "提供各类字体的免费下载和在线预览服务",
+                "url": "https://www.fonts.net.cn/",
+                "icon": "https://www.fonts.net.cn/favicon.ico"
+            }
+        ]
     },
     {
         "icon": "ai-generate-2",
         "href": "#AI工具",
         "title": "AI工具",
-        "list": []
+        "list": [
+            {
+                "title": "ChatGPT",
+                "description": "ChatGPT helps you get answers, find inspiration and be more productive.",
+                "url": "https://chatgpt.com/",
+                "icon": "https://cdn.oaistatic.com/assets/favicon-l4nq08hd.svg"
+            },
+            {
+                "title": "DeepSeek",
+                "description": "探索未至之境",
+                "url": "https://chat.deepseek.com/",
+                "icon": "https://chat.deepseek.com/favicon.svg"
+            },
+            {
+                "title": "即梦AI",
+                "description": "一站式AI创作平台",
+                "url": "https://jimeng.jianying.com/",
+                "icon": "https://lf3-lv-buz.vlabstatic.com/obj/image-lvweb-buz/common/images/dreamina-v5.ico"
+            }
+        ]
     },
     {
         "icon": "book-2-line",
         "href": "#教程/学习",
         "title": "教程/学习",
-        "list": []
+        "list": [
+            {
+                "title": "大厂项目复盘",
+                "description": "收集各大厂项目复盘文章",
+                "url": "https://www.yuque.com/wikidesign/ykf0s9",
+                "icon": "https://mdn.alipayobjects.com/huamei_0prmtq/afts/img/A*vMxOQIh4KBMAAAAAAAAAAAAADvuFAQ/original"
+            },
+            {
+                "title": "纯 CSS 绘制三角形",
+                "description": "cnblogs",
+                "url": "https://www.cnblogs.com/lhb25/p/css-and-css3-triangle.html",
+                "icon": ""
+            },
+            {
+                "title": "css实现缺角的几种方法clip-path",
+                "description": "cnblogs",
+                "url": "https://www.cnblogs.com/lhb25/p/css-and-css3-triangle.html",
+                "icon": ""
+            }
+        ]
     },
     {
         "icon": "game-line",
         "href": "#休闲娱乐",
         "title": "休闲娱乐",
-        "list": []
+        "list": [
+            {
+                "title": "哔哩哔哩",
+                "description": "国内知名的视频弹幕网站",
+                "url": "https://www.bilibili.com",
+                "icon": "https://i0.hdslb.com/bfs/static/jinkela/long/images/favicon.ico"
+            },
+            {
+                "title": "米游社",
+                "description": "米哈游miHoYo旗下游戏玩家社区",
+                "url": "https://www.miyoushe.com/",
+                "icon": "https://img-static.mihoyo.com/favicon.ico"
+            }
+        ]
     }
 ]

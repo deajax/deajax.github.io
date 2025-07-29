@@ -9,7 +9,10 @@
 							:src="item.icon"
 							class="w-full h-full block object-cover"
 						/>
-						<i v-else class="ri-earth-line ri-xl opacity-25"></i>
+						<i
+							v-else
+							class="ri-earth-line ri-lg opacity-25 relative -top-[2px] -left-[2px] leading-none"
+						></i>
 					</template>
 				</a-card-meta>
 			</a-card>
@@ -33,19 +36,21 @@
 <style lang="less" scoped>
 	:deep(.ant-card) {
 		cursor: pointer;
-		// padding: 4px 0;
 
 		&-meta {
 			&-avatar {
-				width: 20px;
-				height: 20px;
+				width: 16px;
+				height: 16px;
 				padding: 0;
-				margin: 2px 0 0 0;
-				overflow: hidden;
+				margin: 4px 0 0 0;
 			}
 
 			&-detail {
 				margin-left: 8px;
+			}
+
+			&-title {
+				line-height: 24px;
 			}
 
 			&-description {

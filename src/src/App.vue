@@ -125,9 +125,12 @@
 				</a-layout-sider>
 			</div>
 		</a-layout>
+		<a-layout-footer class="!bg-white">
+			<span>Copyright Toolbox © 2025 Designed by Deajax</span>
+		</a-layout-footer>
 	</a-layout>
 
-	<a-back-top type="primary">
+	<a-back-top type="primary" :style="{ right: '64px' }">
 		<template #icon>
 			<i class="ri-arrow-up-s-line"></i>
 		</template>

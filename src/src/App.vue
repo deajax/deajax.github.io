@@ -330,6 +330,7 @@
 					border-radius: 0;
 					padding: 12px 16px;
 					background: none;
+					transition: none;
 
 					&-active {
 						background: #fff;

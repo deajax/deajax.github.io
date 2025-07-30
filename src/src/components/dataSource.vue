@@ -41,6 +41,12 @@
 <style lang="less" scoped>
 	:deep(.ant-card) {
 		cursor: pointer;
+		background: #f9fafb;
+		transition: all 0.2s;
+
+		&:hover {
+			background: #fff;
+		}
 
 		&-meta {
 			&-avatar {

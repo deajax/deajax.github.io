@@ -147,6 +147,12 @@
         "title": "开发者资源",
         "list": [
             {
+                "title": "Bootstrap",
+                "description": "The most popular HTML, CSS, and JS library in the world",
+                "url": "https://getbootstrap.com/",
+                "icon": "https://favicon.im/getbootstrap.com"
+            },
+            {
                 "title": "Tailwind CSS",
                 "description": "只需书写 HTML 代码，无需书写 CSS，即可快速构建美观的网站",
                 "url": "https://www.tailwindcss.cn/",
@@ -165,6 +171,12 @@
                 "icon": "https://static.tdesign.tencent.com/favicon.ico"
             },
             {
+                "title": "Arco Design",
+                "description": "企业级产品的完整设计和开发解决方案",
+                "url": "https://arco.design/",
+                "icon": "https://favicon.im/arco.design"
+            },
+            {
                 "title": "Vant 4",
                 "description": "Vant 是一个轻量、可定制的移动端组件库",
                 "url": "https://vant-ui.github.io/vant/",
@@ -177,6 +189,12 @@
                 "icon": "https://qiniu-web-assets.dcloud.net.cn/unidoc/zh/icon.png"
             },
             {
+                "title": "Taro",
+                "description": "开放式跨端跨框架解决方案",
+                "url": "https://docs.taro.zone/",
+                "icon": "https://favicon.im/docs.taro.zone?larger=true"
+            },
+            {
                 "title": "微信开放文档",
                 "description": "微信开发者平台文档",
                 "url": "https://developers.weixin.qq.com/miniprogram/dev/framework/",
@@ -187,6 +205,12 @@
                 "description": "支付宝文档中心",
                 "url": "https://opendocs.alipay.com/mini",
                 "icon": "https://img.alicdn.com/tfs/TB1qEwuzrj1gK0jSZFOXXc7GpXa-32-32.ico"
+            },
+            {
+                "title": "weapp-tailwindcss",
+                "description": "把tailwindcss带给小程序开发者们",
+                "url": "https://weapp-tw.icebreaker.top/",
+                "icon": "https://favicon.im/weapp-tw.icebreaker.top"
             }
         ]
     },
@@ -261,6 +285,24 @@
                 "description": "精品mac软件下载",
                 "url": "https://www.macwk.com",
                 "icon": "https://www.macwk.com/favicon-32x32.ico"
+            },
+            {
+                "title": "appstorrent",
+                "description": "игры и программы для macOS",
+                "url": "https://appstorrent.ru/",
+                "icon": "https://favicon.im/appstorrent.ru?larger=true"
+            },
+            {
+                "title": "苹果软件站",
+                "description": "苹果游戏应用ID账号分享",
+                "url": "https://www.iios.fun/",
+                "icon": "https://favicon.im/www.iios.fun?larger=true"
+            },
+            {
+                "title": "风灵月影",
+                "description": "PC Game Cheats and Mods",
+                "url": "https://flingtrainer.com/",
+                "icon": "https://favicon.im/flingtrainer.com?larger=true"
             }
         ]
     },
@@ -326,10 +368,88 @@
                 "icon": "https://favicon.im/www.bilibili.com?larger=true"
             },
             {
+                "title": "电影港",
+                "description": "高清电影下载",
+                "url": "https://www.dygangs.net/",
+                "icon": "https://favicon.im/www.dygangs.net?larger=true"
+            },
+            {
+                "title": "分享交流下载字幕平台 - SubHD",
+                "description": "subhd.cc / subhd.me",
+                "url": "https://subhd.tv/",
+                "icon": "https://favicon.im/subhd.tv?larger=true"
+            },
+            {
+                "title": "人人影视",
+                "description": "筷子视频高品质美剧在线",
+                "url": "https://kuaizi.cc/",
+                "icon": "https://kuaizi.cc/template/NETVOD/assets/icon/favicon.ico"
+            },
+            {
+                "title": "NGA玩家社区",
+                "description": "NGA是国内最专业的游戏玩家社区",
+                "url": "https://nga.cn/",
+                "icon": "https://favicon.im/nga.cn?larger=true"
+            },
+            {
+                "title": "GameKee|游戏百科攻略",
+                "description": "GameKee（简称K站）致力于为好游戏提供wiki百科和情报攻略",
+                "url": "https://www.gamekee.com/",
+                "icon": "https://favicon.im/www.gamekee.com?larger=true"
+            },
+            {
                 "title": "米游社",
                 "description": "米哈游miHoYo旗下游戏玩家社区",
                 "url": "https://www.miyoushe.com/",
                 "icon": "https://img-static.mihoyo.com/favicon.ico"
+            },
+            {
+                "title": "Paimon.moe",
+                "description": "Your best Genshin Impact companion!",
+                "url": "https://paimon.moe/",
+                "icon": "https://paimon.moe/favicon.png"
+            },
+            {
+                "title": "琉璃神社★分享动漫快乐",
+                "description": "琉璃神社是一个分享ACG动漫同人作品的有爱社团,",
+                "url": "https://www.hacg.me/",
+                "icon": "https://favicon.im/www.hacg.me?larger=true"
+            },
+            {
+                "title": "灵梦御所",
+                "description": "绅士的幻想乡",
+                "url": "https://blog.reimu.net/",
+                "icon": "https://favicon.im/blog.reimu.net?larger=true"
+            },
+            {
+                "title": "南+ South Plus",
+                "description": "汉化,动画,漫画,游戏,音乐,同人,轻小说",
+                "url": "https://www.south-plus.net/",
+                "icon": "https://favicon.im/www.south-plus.net"
+            },
+            {
+                "title": "DLsite 総合トップページ",
+                "description": "同人誌、同人ゲームからPCソフト、コミックまで二次元総合ダウンロードショップ",
+                "url": "https://www.dlsite.com/",
+                "icon": "https://favicon.im/www.dlsite.com?larger=true"
+            },
+            {
+                "title": "EROLABS 工口实验室",
+                "description": "齐聚众多超人气游戏、BL游戏！快来找一款可以陪伴你的黄油吧！",
+                "url": "https://www.ero-labs.com/",
+                "icon": "https://favicon.im/www.ero-labs.com?larger=true"
+            },
+            {
+                "title": "BLOCKPOST - 免费在线玩! | Poki (宝玩)",
+                "description": "在最受欢迎的免费在线小游戏网站上玩Blockpost！",
+                "url": "https://poki.com/",
+                "icon": "https://favicon.im/poki.com"
+            },
+            {
+                "title": "小霸王，其乐无穷",
+                "description": "黑白电视机前玩着小霸王游戏机的那种感觉令人怀念，希望大家可以找回童年的快乐",
+                "url": "https://www.yikm.net",
+                "icon": "https://favicon.im/www.yikm.net"
             }
         ]
     }

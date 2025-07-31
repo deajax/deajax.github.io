@@ -15,26 +15,27 @@
 									<i v-else class="ri-sun-fill"></i>
 								</template>
 							</a-button>
-							<a-tooltip title="GitHub" placement="bottom">
-								<a-button @click="openGitHub" class="bg-transparent">
-									<template #icon>
-										<i class="ri-github-fill ri-lg"></i>
-									</template>
-								</a-button>
-							</a-tooltip>
-							<a-tooltip title="反馈" placement="bottom">
-								<a-button
-									@click="feedback"
-									:type="isDarkMode ? '' : 'text'"
-									:class="isDarkMode ? 'bg-neutral-800' : 'bg-gray-200'"
-									:ghost="isDarkMode"
-								>
-									<template #icon>
-										<i class="ri-edit-2-line mr-2"></i>
-									</template>
-									<span class="text-xs">问题反馈</span>
-								</a-button>
-							</a-tooltip>
+							<a-button @click="showModal = true" class="bg-transparent">
+								<template #icon>
+									<i class="ri-question-fill"></i>
+								</template>
+							</a-button>
+							<a-button @click="openGitHub" class="bg-transparent">
+								<template #icon>
+									<i class="ri-github-fill ri-lg"></i>
+								</template>
+							</a-button>
+							<a-button
+								@click="feedback"
+								:type="isDarkMode ? '' : 'text'"
+								:class="isDarkMode ? 'bg-neutral-800' : 'bg-gray-200'"
+								:ghost="isDarkMode"
+							>
+								<template #icon>
+									<i class="ri-edit-2-line mr-2"></i>
+								</template>
+								<span class="text-xs">问题反馈</span>
+							</a-button>
 						</a-space>
 					</div>
 				</a-layout-header>
@@ -162,6 +163,12 @@
 				<i class="ri-arrow-up-s-line"></i>
 			</template>
 		</a-back-top>
+
+		<a-modal v-model:open="showModal" title="帮助" :footer="null" centered closable>
+			<p>Some contents...</p>
+			<p>Some contents...</p>
+			<p>Some contents...</p>
+		</a-modal>
 	</a-config-provider>
 </template>
 
@@ -170,6 +177,9 @@
 	import { theme } from "ant-design-vue";
 	import dataSource from "@/components/dataSource.vue";
 	import data from "@/data.json";
+
+	// 对话框
+	const showModal = ref(false);
 
 	// 配置默认选项卡为百度搜索
 	const activeKey = ref("baidu");

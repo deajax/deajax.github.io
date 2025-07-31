@@ -119,7 +119,7 @@
                 "title": "GLaDOS",
                 "description": "值得信赖的VPN网络工具",
                 "url": "https://rz5sf-higb2-esli0-0ktdu.glados.space",
-                "icon": "https://glados.one/favicon.ico"
+                "icon": "https://favicon.im/glados.one"
             },
             {
                 "title": "SVG图形编码工具",
@@ -322,6 +322,12 @@
                 "description": "探索未至之境",
                 "url": "https://chat.deepseek.com/",
                 "icon": "https://chat.deepseek.com/favicon.svg"
+            },
+            {
+                "title": "豆包",
+                "description": "豆包是你的AI聊天智能对话问答助手，写作文案翻译编程全能工具。",
+                "url": "https://www.doubao.com/",
+                "icon": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/web/logo-icon.png"
             },
             {
                 "title": "即梦AI",

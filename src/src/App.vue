@@ -4,37 +4,55 @@
 			<div class="toolbox-header">
 				<a-layout-header class="flex items-center !bg-transparent !px-6 mb-4">
 					<div class="flex items-center">
-						<img src="@/assets/logo.svg" class="h-8 mr-2" />
-						<h4 class="text-lg font-mono font-bold">Toolbox</h4>
+						<img src="@/assets/logo.svg" class="h-10 mr-3" />
+						<h4 class="text-xl font-mono font-bold">Toolbox</h4>
 					</div>
 					<div class="ml-auto">
 						<a-space align="center">
-							<a-button @click="toggleTheme" class="bg-transparent">
+							<a-button
+								@click="toggleTheme"
+								class="bg-transparent"
+								size="large"
+							>
 								<template #icon>
-									<i v-if="isDarkMode" class="ri-moon-fill"></i>
-									<i v-else class="ri-sun-fill"></i>
+									<i
+										v-if="isDarkMode"
+										class="ri-moon-fill text-lg leading-none"
+									></i>
+									<i
+										v-else
+										class="ri-sun-fill text-lg leading-none"
+									></i>
 								</template>
 							</a-button>
-							<a-button @click="showModal = true" class="bg-transparent">
+							<a-button
+								@click="showModal = true"
+								class="bg-transparent"
+								size="large"
+							>
 								<template #icon>
-									<i class="ri-question-fill"></i>
+									<i class="ri-question-fill text-lg leading-none"></i>
 								</template>
 							</a-button>
-							<a-button @click="openGitHub" class="bg-transparent">
+							<a-button
+								@click="openGitHub"
+								class="bg-transparent"
+								size="large"
+							>
 								<template #icon>
-									<i class="ri-github-fill ri-lg"></i>
+									<i class="ri-github-fill text-lg leading-none"></i>
 								</template>
 							</a-button>
 							<a-button
 								@click="feedback"
 								:type="isDarkMode ? '' : 'text'"
-								:class="isDarkMode ? 'bg-neutral-800' : 'bg-gray-200'"
+								class="bg-transparent"
 								:ghost="isDarkMode"
+								size="large"
 							>
 								<template #icon>
-									<i class="ri-edit-2-line mr-2"></i>
+									<i class="ri-edit-2-line text-lg leading-none"></i>
 								</template>
-								<span class="text-xs">问题反馈</span>
 							</a-button>
 						</a-space>
 					</div>

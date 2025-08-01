@@ -128,6 +128,24 @@
                 "icon": "https://deajax.github.io/encodeSVG/favicon.ico"
             },
             {
+                "title": "lottiefiles",
+                "description": "Lottie动画工具",
+                "url": "https://lottiefiles.com/",
+                "icon": "https://lottiefiles.com/favicon.ico"
+            },
+            {
+                "title": "Canva可画",
+                "description": "可以设计、生成、印刷和处理任何内容",
+                "url": "https://www.canva.com/zh_cn/",
+                "icon": "https://www.canva.com/favicon.ico"
+            },
+            {
+                "title": "temp.im",
+                "description": "一个占位符图片，你可以在任何地方使用它们",
+                "url": "https://temp.im/",
+                "icon": "https://favicon.im/temp.im"
+            },
+            {
                 "title": "篡改猴 Tampermonkey",
                 "description": "最流行的浏览器扩展之一",
                 "url": "https://www.tampermonkey.net/",
@@ -138,6 +156,72 @@
                 "description": "即时获取和下载任何网站的图标",
                 "url": "https://favicon.im/zh/",
                 "icon": "https://favicon.im/Favicon.im?larger=true"
+            },
+             {
+                "title": "零代码工具箱",
+                "description": "帮助所有程序员提高前端开发效率！",
+                "url": "https://lingdaima.com/",
+                "icon": "https://favicon.im/lingdaima.com?larger=true"
+            },
+            {
+                "title": "人名数据库",
+                "description": "记录了虚拟信息的数据库，可用来做演示数据",
+                "url": "https://www.darkripples.com/app_lab/fakeData/createData/20?keys=name,ssn,car_no,phone_number,address,date,time,email",
+                "icon": "https://favicon.im/www.darkripples.com?larger=true"
+            },
+            {
+                "title": "CSS Grid Generator",
+                "description": "设置行和列，我将为您生成一个CSSGrid网格布局",
+                "url": "https://cssgrid-generator.netlify.app/",
+                "icon": "https://favicon.im/cssgrid-generator.netlify.app"
+            },
+            {
+                "title": "Animate.css",
+                "description": "Just-add-water CSS animations",
+                "url": "https://animate.style/",
+                "icon": "https://favicon.im/animate.style"
+            },
+            {
+                "title": "炫酷配色",
+                "description": "设计师配色神器",
+                "url": "https://www.coocolors.com/",
+                "icon": "https://favicon.im/www.coocolors.com"
+            },
+            {
+                "title": "CSS 渐变生成器",
+                "description": "Ultimate CSS Gradient Generator",
+                "url": "https://www.colorzilla.com/gradient-editor/",
+                "icon": "https://favicon.im/www.colorzilla.com"
+            },
+            {
+                "title": "我的css3图案库",
+                "description": "CSS3 Patterns Gallery",
+                "url": "https://projects.verou.me/css3patterns/",
+                "icon": "https://favicon.im/projects.verou.me"
+            },
+            {
+                "title": "DataV.GeoAtlas地理小工具",
+                "description": "无需编程的一站式智能数据可视化平台",
+                "url": "https://datav.aliyun.com/portal/school/atlas/area_selector",
+                "icon": "https://favicon.im/datav.aliyun.com"
+            },
+            {
+                "title": "ChartCube 图表魔方",
+                "description": "在线图表制作工具",
+                "url": "https://chartcube.alipay.com/",
+                "icon": "https://favicon.im/chartcube.alipay.com"
+            },
+            {
+                "title": "parallax.js",
+                "description": "轻量级的的视差引擎，可创建视差滚动效果",
+                "url": "https://matthew.wagerfield.com/parallax/",
+                "icon": "https://favicon.im/matthew.wagerfield.com"
+            },
+            {
+                "title": "CODELF",
+                "description": "变量命名神器",
+                "url": "https://unbug.github.io/codelf/",
+                "icon": "https://unbug.github.io/codelf/images/codelf_logo.f4ae25bd.png"
             }
         ]
     },
@@ -432,12 +516,6 @@
                 "description": "汉化,动画,漫画,游戏,音乐,同人,轻小说",
                 "url": "https://www.south-plus.net/",
                 "icon": "https://favicon.im/www.south-plus.net"
-            },
-            {
-                "title": "DLsite 総合トップページ",
-                "description": "同人誌、同人ゲームからPCソフト、コミックまで二次元総合ダウンロードショップ",
-                "url": "https://www.dlsite.com/",
-                "icon": "https://favicon.im/www.dlsite.com?larger=true"
             },
             {
                 "title": "EROLABS 工口实验室",

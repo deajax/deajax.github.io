@@ -98,24 +98,6 @@
                 "icon": "https://static.clewm.net/static/images/favicon.ico"
             },
             {
-                "title": "iconfont-阿里巴巴矢量图标库",
-                "description": "国内功能很强大且图标内容很丰富的矢量图标库",
-                "url": "https://www.iconfont.cn",
-                "icon": "https://img.alicdn.com/imgextra/i4/O1CN01Z5paLz1O0zuCC7osS_!!6000000001644-55-tps-83-82.svg"
-            },
-            {
-                "title": "IconPark",
-                "description": "IconPark, park your icon",
-                "url": "https://iconpark.oceanengine.com/",
-                "icon": "https://lf1-cdn2-tos.bytegoofy.com/bydesign/iconparksite/logo.svg"
-            },
-            {
-                "title": "Remix Icon",
-                "description": "Remix Icon is a set of open source neutral style system symbols elaborately crafted for designers and developers.",
-                "url": "https://remixicon.com",
-                "icon": "https://www.remixicon.com/img/remixicon-logo.svg"
-            },
-            {
                 "title": "GLaDOS",
                 "description": "值得信赖的VPN网络工具",
                 "url": "https://rz5sf-higb2-esli0-0ktdu.glados.space",
@@ -157,7 +139,7 @@
                 "url": "https://favicon.im/zh/",
                 "icon": "https://favicon.im/Favicon.im?larger=true"
             },
-             {
+            {
                 "title": "零代码工具箱",
                 "description": "帮助所有程序员提高前端开发效率！",
                 "url": "https://lingdaima.com/",
@@ -295,6 +277,54 @@
                 "description": "把tailwindcss带给小程序开发者们",
                 "url": "https://weapp-tw.icebreaker.top/",
                 "icon": "https://favicon.im/weapp-tw.icebreaker.top"
+            },
+            {
+                "title": "UIkit",
+                "description": "UIkit 是一个免费开源的响应式前端框架，基于 HTML5 和 CSS3。",
+                "url": "https://getuikit.com/",
+                "icon": "https://favicon.im/getuikit.com"
+            },
+            {
+                "title": "Swiper",
+                "description": "Swiper是纯javascript打造的滑动特效插件，面向手机、平板电脑等移动终端。",
+                "url": "https://www.swiper.com.cn/",
+                "icon": "https://favicon.im/www.swiper.com.cn"
+            },
+            {
+                "title": "jsDelivr CDN",
+                "description": "jsDelivr是一个全球内容分发网络，用于提供开源项目的内容",
+                "url": "https://www.jsdelivr.com/",
+                "icon": "https://favicon.im/www.jsdelivr.com"
+            },
+            {
+                "title": "Material Symbols and Icons",
+                "description": "Google Material Symbols和图标",
+                "url": "https://fonts.google.com/icons",
+                "icon": "https://favicon.im/fonts.google.com?larger=true"
+            },
+            {
+                "title": "IconPark",
+                "description": "IconPark, park your icon",
+                "url": "https://iconpark.oceanengine.com/",
+                "icon": "https://lf1-cdn2-tos.bytegoofy.com/bydesign/iconparksite/logo.svg"
+            },
+            {
+                "title": "Font Awesome",
+                "description": "Font Awesome是一个图标库",
+                "url": "https://fontawesome.com/",
+                "icon": "https://favicon.im/fontawesome.com?larger=true"
+            },
+            {
+                "title": "iconfont-阿里巴巴矢量图标库",
+                "description": "国内功能很强大且图标内容很丰富的矢量图标库",
+                "url": "https://www.iconfont.cn",
+                "icon": "https://img.alicdn.com/imgextra/i4/O1CN01Z5paLz1O0zuCC7osS_!!6000000001644-55-tps-83-82.svg"
+            },
+            {
+                "title": "Remix Icon",
+                "description": "Remix Icon is a set of open source neutral style system symbols elaborately crafted for designers and developers.",
+                "url": "https://remixicon.com",
+                "icon": "https://www.remixicon.com/img/remixicon-logo.svg"
             }
         ]
     },

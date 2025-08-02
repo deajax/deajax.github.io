@@ -182,10 +182,38 @@
 			</template>
 		</a-back-top>
 
-		<a-modal v-model:open="showModal" title="帮助" :footer="null" centered closable>
-			<p>Some contents...</p>
-			<p>Some contents...</p>
-			<p>Some contents...</p>
+		<a-modal
+			v-model:open="showModal"
+			title="帮助"
+			:footer="null"
+			:width="800"
+			centered
+			closable
+		>
+			<a-typography-paragraph class="pt-1 leading-loose">
+				<blockquote>
+					<div>
+						所有导航、分类、排序纯凭个人喜好进行制作，无法做到包罗万象，只把常用的几个导航做了进来。
+					</div>
+					<div>
+						所有问题以及导航失效等都可以发
+						<a-typography-link
+							href="https://github.com/deajax/toolbox/issues/new"
+						>
+							issues
+						</a-typography-link>
+					</div>
+				</blockquote>
+				<ul class="">
+					<li>我是个UI Designer，业余会一点html和css，制作初衷只是打算为给自己设一个浏览器首页。</li>
+					<li>接受任何合理的意见及建议，各类问题以及导航失效等可以提issues。</li>
+					<li>部分导航需要梯子(vpn)才能打开，比较明确的我会用<i class="ri-key-fill text-orange-600"></i>来标识，但尚有不明确的未标识的可以提issues。</li>
+					<li>GlasDOS是个不错的梯子，但不免费，虽然不是广子，但是链接加了我的推广码，这样我能多几天使用权，如果介意请提醒我。</li>
+					<li>有些导航的分类可能是错的，纯凭我的浅薄认知进行分类，如果有错请提醒，谢谢！</li>
+					<li>如果我的导航侵犯了您的权益，请联系我，我会及时删除。</li>
+					<li>本站使用vue3+vite+less构建、ant-design-vue组件库、remixicon图标库以及tailwindcss。感谢以上。</li>
+				</ul>
+			</a-typography-paragraph>
 		</a-modal>
 	</a-config-provider>
 </template>

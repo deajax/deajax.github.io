@@ -379,13 +379,13 @@
                 "title": "字体灵感",
                 "description": "为字体设计者提供字体设计展示平台",
                 "url": "http://ziti.cndesign.com/",
-                "icon": "http://ziti.cndesign.com/favicon.ico"
+                "icon": "https://favicon.im/ziti.cndesign.com"
             },
             {
                 "title": "字体天下",
                 "description": "提供各类字体的免费下载和在线预览服务",
                 "url": "https://www.fonts.net.cn/",
-                "icon": "https://www.fonts.net.cn/favicon.ico"
+                "icon": "https://favicon.im/www.fonts.net.cn"
             }
         ]
     },

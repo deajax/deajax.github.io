@@ -285,6 +285,12 @@
                 "icon": "https://favicon.im/getuikit.com"
             },
             {
+                "title": "Layui",
+                "description": "极简模块化 Web UI 组件库",
+                "url": "https://layui.dev/",
+                "icon": "https://favicon.im/layui.dev"
+            },
+            {
                 "title": "Swiper",
                 "description": "Swiper是纯javascript打造的滑动特效插件，面向手机、平板电脑等移动终端。",
                 "url": "https://www.swiper.com.cn/",

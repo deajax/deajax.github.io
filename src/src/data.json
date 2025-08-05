@@ -536,6 +536,18 @@
                 "icon": "https://paimon.moe/favicon.png"
             },
             {
+                "title": "BLOCKPOST - 免费在线玩! | Poki (宝玩)",
+                "description": "在最受欢迎的免费在线小游戏网站上玩Blockpost！",
+                "url": "https://poki.com/",
+                "icon": "https://favicon.im/poki.com"
+            },
+            {
+                "title": "小霸王，其乐无穷",
+                "description": "黑白电视机前玩着小霸王游戏机的那种感觉令人怀念，希望大家可以找回童年的快乐",
+                "url": "https://www.yikm.net",
+                "icon": "https://favicon.im/www.yikm.net"
+            },
+            {
                 "title": "琉璃神社★分享动漫快乐",
                 "description": "琉璃神社是一个分享ACG动漫同人作品的有爱社团,",
                 "url": "https://www.hacg.me/",
@@ -565,16 +577,11 @@
                 "vpn": true
             },
             {
-                "title": "BLOCKPOST - 免费在线玩! | Poki (宝玩)",
-                "description": "在最受欢迎的免费在线小游戏网站上玩Blockpost！",
-                "url": "https://poki.com/",
-                "icon": "https://favicon.im/poki.com"
-            },
-            {
-                "title": "小霸王，其乐无穷",
-                "description": "黑白电视机前玩着小霸王游戏机的那种感觉令人怀念，希望大家可以找回童年的快乐",
-                "url": "https://www.yikm.net",
-                "icon": "https://favicon.im/www.yikm.net"
+                "title": "芭芭拉有声小说吧",
+                "description": "有声小说打包下载",
+                "url": "http://www.8ysxs.top/",
+                "icon": "https://favicon.im/www.8ysxs.top?larger=true",
+                "r18": true
             }
         ]
     }

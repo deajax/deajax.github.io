@@ -299,7 +299,7 @@
 		// 检查是否输入了特殊代码
 		if (keywords.value === "1024") {
 			showR18.value = !showR18.value;
-			localStorage.setItem("showR18", true);
+			localStorage.setItem("showR18", showR18.value);
 			keywords.value = ""; // 清空输入框
 
 			if (showR18.value) {

@@ -539,25 +539,30 @@
                 "title": "琉璃神社★分享动漫快乐",
                 "description": "琉璃神社是一个分享ACG动漫同人作品的有爱社团,",
                 "url": "https://www.hacg.me/",
-                "icon": "https://favicon.im/www.hacg.me?larger=true"
+                "icon": "https://favicon.im/www.hacg.me?larger=true",
+                "r18": true
             },
             {
                 "title": "灵梦御所",
                 "description": "绅士的幻想乡",
                 "url": "https://blog.reimu.net/",
-                "icon": "https://favicon.im/blog.reimu.net?larger=true"
+                "icon": "https://favicon.im/blog.reimu.net?larger=true",
+                "r18": true
             },
             {
                 "title": "南+ South Plus",
                 "description": "汉化,动画,漫画,游戏,音乐,同人,轻小说",
                 "url": "https://www.south-plus.net/",
-                "icon": "https://favicon.im/www.south-plus.net"
+                "icon": "https://favicon.im/www.south-plus.net",
+                "r18": true
             },
             {
                 "title": "EROLABS 工口实验室",
                 "description": "齐聚众多超人气游戏、BL游戏！快来找一款可以陪伴你的黄油吧！",
                 "url": "https://www.ero-labs.com/",
-                "icon": "https://favicon.im/www.ero-labs.com?larger=true"
+                "icon": "https://favicon.im/www.ero-labs.com?larger=true",
+                "r18": true,
+                "vpn": true
             },
             {
                 "title": "BLOCKPOST - 免费在线玩! | Poki (宝玩)",

@@ -74,7 +74,7 @@
 								</template>
 								<div class="p-3 bg-white dark:bg-neutral-900">
 									<a-input-search
-										v-model:value="searchForm.keywords"
+										v-model:value="keywords"
 										size="large"
 										placeholder="百度一下，你就知道"
 										:bordered="false"
@@ -106,7 +106,7 @@
 								</template>
 								<div class="p-3 bg-white dark:bg-[#141414]">
 									<a-input-search
-										v-model:value="searchForm.keywords"
+										v-model:value="keywords"
 										size="large"
 										placeholder="在 Google 中搜索，或输入网址"
 										:bordered="false"
@@ -142,10 +142,10 @@
 						<div
 							:id="item.title"
 							class="mb-16"
-							v-for="(item, index) in dataList"
+							v-for="(item, index) in processedDataList"
 							:key="index"
 						>
-							<template v-if="item.list && item.list.length > 0">
+							<div v-if="item.list && item.list.length > 0">
 								<div class="mb-8 flex items-center">
 									<i
 										class="mr-3 text-blue-700"
@@ -153,8 +153,8 @@
 									></i>
 									<h4 class="text-xl font-bold">{{ item.title }}</h4>
 								</div>
-								<data-source :data="item.list" />
-							</template>
+								<data-source :data="item.list" :show-r18="showR18" />
+							</div>
 						</div>
 					</a-layout-content>
 					<a-layout-sider class="ml-14 !bg-transparent">
@@ -205,13 +205,29 @@
 					</div>
 				</blockquote>
 				<ul class="">
-					<li>我是个UI Designer，业余会一点html和css，制作初衷只是打算为给自己设一个浏览器首页。</li>
-					<li>接受任何合理的意见及建议，各类问题以及导航失效等可以提issues。</li>
-					<li>部分导航需要梯子(vpn)才能打开，比较明确的我会用<i class="ri-key-fill text-orange-600"></i>来标识，但尚有不明确的未标识的可以提issues。</li>
-					<li>GlasDOS是个不错的梯子，但不免费，虽然不是广子，但是链接加了我的推广码，这样我能多几天使用权，如果介意请提醒我。</li>
-					<li>有些导航的分类可能是错的，纯凭我的浅薄认知进行分类，如果有错请提醒，谢谢！</li>
+					<li>
+						我是个UI
+						Designer，业余会一点html和css，制作初衷只是打算为给自己设一个浏览器首页。
+					</li>
+					<li>
+						接受任何合理的意见及建议，各类问题以及导航失效等可以提issues。
+					</li>
+					<li>
+						部分导航需要梯子(vpn)才能打开，比较明确的我会用<i
+							class="ri-key-fill text-orange-600"
+						></i
+						>来标识，但尚有不明确的未标识的可以提issues。
+					</li>
+					<li>
+						GlasDOS是个不错的梯子，但不免费，虽然不是广子，但是链接加了我的推广码，这样我能多几天使用权，如果介意请提醒我。
+					</li>
+					<li>
+						有些导航的分类可能是错的，纯凭我的浅薄认知进行分类，如果有错请提醒，谢谢！
+					</li>
 					<li>如果我的导航侵犯了您的权益，请联系我，我会及时删除。</li>
-					<li>本站使用vue3+vite+less构建、ant-design-vue组件库、remixicon图标库以及tailwindcss。感谢以上。</li>
+					<li>
+						本站使用vue3+vite+less构建、ant-design-vue组件库、remixicon图标库以及tailwindcss。感谢以上。
+					</li>
 				</ul>
 			</a-typography-paragraph>
 		</a-modal>
@@ -219,8 +235,8 @@
 </template>
 
 <script setup>
-	import { ref, reactive, computed, watch, onMounted } from "vue";
-	import { theme } from "ant-design-vue";
+	import { ref, computed, watch, onMounted } from "vue";
+	import { theme, message } from "ant-design-vue";
 	import dataSource from "@/components/dataSource.vue";
 	import data from "@/data.json";
 
@@ -231,12 +247,29 @@
 	const activeKey = ref("baidu");
 
 	// 设置默认搜索关键词为空
-	const searchForm = reactive({
-		keywords: "",
-	});
+	const keywords = ref("");
+
+	// R18显示开关
+	const showR18 = ref(false);
 
 	// 卡片列表数据
 	const dataList = ref(data);
+
+	// 处理后的数据列表（根据R18开关过滤）
+	const processedDataList = computed(() => {
+		if (showR18.value) {
+			// 显示所有内容，包括R18
+			return dataList.value;
+		} else {
+			// 过滤掉包含R18=true的项目
+			return dataList.value
+				.map((category) => ({
+					...category,
+					list: category.list?.filter((item) => !item.r18) || [],
+				}))
+				.filter((category) => category.list?.length > 0);
+		}
+	});
 
 	// 获取当前锚点
 	const getCurrentAnchor = (activeLink) => {
@@ -246,7 +279,7 @@
 		}
 
 		// 页面加载时，如果没有激活的链接，返回第一个有内容的锚点
-		const firstActiveItem = dataList.value.find(
+		const firstActiveItem = processedDataList.value.find(
 			(item) => item.list && item.list.length > 0
 		);
 		if (firstActiveItem) {
@@ -254,8 +287,8 @@
 		}
 
 		// 默认返回第一个项目
-		if (dataList.value.length > 0) {
-			return `#${dataList.value[0].title}`;
+		if (processedDataList.value.length > 0) {
+			return `#${processedDataList.value[0].title}`;
 		}
 
 		return activeLink;
@@ -263,13 +296,33 @@
 
 	// 百度搜索
 	const onSubmitBaidu = () => {
-		const encodedKeywords = encodeURIComponent(searchForm.keywords);
-		window.open(`https://www.baidu.com/s?wd=${encodedKeywords}`, "_blank");
+		// 检查是否输入了特殊代码
+		if (keywords.value === "1024") {
+			showR18.value = !showR18.value;
+			localStorage.setItem("showR18", true);
+			keywords.value = ""; // 清空输入框
+
+			if (showR18.value) {
+				message.warning("已开启R18模式");
+				return;
+			} else {
+				message.success("已关闭R18模式");
+				return;
+			}
+		} else {
+			// 默认百度搜索
+			const encodedKeywords = encodeURIComponent(keywords.value);
+			window.open(`https://www.baidu.com/s?wd=${encodedKeywords}`, "_blank");
+
+			keywords.value = ""; // 清空输入框
+		}
 	};
 	// 谷歌搜索
 	const onSubmitGoogle = () => {
-		const encodedKeywords = encodeURIComponent(searchForm.keywords);
+		const encodedKeywords = encodeURIComponent(keywords.value);
 		window.open(`https://www.google.com/search?q=${encodedKeywords}`, "_blank");
+
+		keywords.value = ""; // 清空输入框
 	};
 	// 打开github
 	const openGitHub = () => {
@@ -283,7 +336,6 @@
 	// 主题状态管理
 	const isDarkMode = ref(false);
 	const followSystem = ref(true);
-	const selectedValue = ref("option1");
 
 	// 主题配置
 	const themeConfig = computed(() => ({
@@ -327,8 +379,14 @@
 		}
 	});
 
-	// 初始化主题
+	// 初始化主题和R18设置
 	onMounted(() => {
+		// 初始化R18设置
+		const savedShowR18 = localStorage.getItem("showR18");
+		if (savedShowR18 !== null) {
+			showR18.value = JSON.parse(savedShowR18);
+		}
+
 		// 1. 检查本地存储中的用户偏好
 		const savedPreference = localStorage.getItem("themePreference");
 

@@ -419,6 +419,12 @@
                 "icon": "https://favicon.im/www.iios.fun?larger=true"
             },
             {
+                "title": "移花接木Mac资源网",
+                "description": "专注于Mac游戏下载与软件资源",
+                "url": "https://mac-gm.com/tools/",
+                "icon": "https://favicon.im/mac-gm.com"
+            },
+            {
                 "title": "风灵月影",
                 "description": "PC Game Cheats and Mods",
                 "url": "https://flingtrainer.com/",
@@ -524,18 +530,6 @@
                 "icon": "https://favicon.im/www.gamekee.com?larger=true"
             },
             {
-                "title": "米游社",
-                "description": "米哈游miHoYo旗下游戏玩家社区",
-                "url": "https://www.miyoushe.com/",
-                "icon": "https://img-static.mihoyo.com/favicon.ico"
-            },
-            {
-                "title": "Paimon.moe",
-                "description": "Your best Genshin Impact companion!",
-                "url": "https://paimon.moe/",
-                "icon": "https://paimon.moe/favicon.png"
-            },
-            {
                 "title": "BLOCKPOST - 免费在线玩! | Poki (宝玩)",
                 "description": "在最受欢迎的免费在线小游戏网站上玩Blockpost！",
                 "url": "https://poki.com/",
@@ -546,6 +540,48 @@
                 "description": "黑白电视机前玩着小霸王游戏机的那种感觉令人怀念，希望大家可以找回童年的快乐",
                 "url": "https://www.yikm.net",
                 "icon": "https://favicon.im/www.yikm.net"
+            },
+            {
+                "title": "米游社",
+                "description": "米哈游miHoYo旗下游戏玩家社区",
+                "url": "https://www.miyoushe.com/",
+                "icon": "https://img-static.mihoyo.com/favicon.ico"
+            },
+            {
+                "title": "天空岛数据库",
+                "description": "原神深境螺旋使用率数据统计排名",
+                "url": "https://www.youngmoe.com/weapon",
+                "icon": "https://favicon.im/www.youngmoe.com?larger=true"
+            },
+            {
+                "title": "原神抽卡记录分析工具",
+                "description": "原神抽卡记录分析工具",
+                "url": "http://genshin.voderl.cn/",
+                "icon": "https://ys.mihoyo.com/main/favicon.ico"
+            },
+            {
+                "title": "Paimon.moe",
+                "description": "Your best Genshin Impact companion!",
+                "url": "https://paimon.moe/",
+                "icon": "https://paimon.moe/favicon.png"
+            },
+            {
+                "title": "时速游戏站",
+                "description": "时速游戏站 专注MAC游戏",
+                "url": "https://macxgame.com/",
+                "icon": "https://favicon.im/macxgame.com"
+            },
+            {
+                "title": "Nexus Mods",
+                "description": "模组与社区",
+                "url": "https://www.nexusmods.com",
+                "icon": "https://favicon.im/www.nexusmods.com"
+            },
+            {
+                "title": "GameBanana",
+                "description": "游戏模组社区",
+                "url": "https://gamebanana.com/",
+                "icon": "https://favicon.im/gamebanana.com?larger=true"
             },
             {
                 "title": "琉璃神社★分享动漫快乐",

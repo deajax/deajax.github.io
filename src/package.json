@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@cloudbase/js-sdk": "^2.20.2",
     "ant-design-vue": "^4.2.6",
     "less": "^4.4.0",
     "less-loader": "^12.3.0",

@@ -1,5 +1,6 @@
 [
-    {
+        {
+        "_id": "common",
         "icon": "anchor-fill",
         "href": "#常用导航",
         "title": "常用导航",
@@ -87,6 +88,7 @@
         ]
     },
     {
+        "_id": "tools",
         "icon": "tools-line",
         "href": "#实用工具",
         "title": "实用工具",
@@ -208,6 +210,7 @@
         ]
     },
     {
+        "_id": "developer",
         "icon": "terminal-box-line",
         "href": "#开发者资源",
         "title": "开发者资源",
@@ -335,6 +338,7 @@
         ]
     },
     {
+        "_id": "design",
         "icon": "palette-line",
         "href": "#设计资源",
         "title": "设计资源",
@@ -386,10 +390,53 @@
                 "description": "提供各类字体的免费下载和在线预览服务",
                 "url": "https://www.fonts.net.cn/",
                 "icon": "https://favicon.im/www.fonts.net.cn"
+            },
+            {
+                "title": "CoDesign",
+                "description": "产品设计研发一站式协作平台",
+                "url": "https://codesign.qq.com/",
+                "icon": "https://favicon.im/codesign.qq.com"
+            },
+            {
+                "title": "蓝湖",
+                "description": "高效的产品设计协作平台",
+                "url": "https://lanhuapp.com/",
+                "icon": "https://favicon.im/lanhuapp.com"
+            },
+            {
+                "title": "摹客",
+                "description": "让设计和协作更快更简单",
+                "url": "https://www.mockplus.cn/",
+                "icon": "https://favicon.im/www.mockplus.cn"
+            },
+            {
+                "title": "墨刀",
+                "description": "适合产品经理的原型设计及协作平台",
+                "url": "https://modao.cc/",
+                "icon": "https://favicon.im/modao.cc"
+            },
+            {
+                "title": "MasterGo",
+                "description": "面向团队的专业UI/UX设计工具",
+                "url": "https://mastergo.com/",
+                "icon": "https://favicon.im/mastergo.com?larger=true"
+            },
+            {
+                "title": "Apple Design",
+                "description": "设计出能与 Apple 平台无缝集成的出色 App 和游戏",
+                "url": "https://developer.apple.com/cn/design/",
+                "icon": "https://favicon.im/www.mockplus.cn"
+            },
+            {
+                "title": "Material Design",
+                "description": "Google于跨平台设计语言",
+                "url": "https://m3.material.io/",
+                "icon": "https://favicon.im/modao.cc"
             }
         ]
     },
     {
+        "_id": "software",
         "icon": "app-store-line",
         "href": "#软件程序资源",
         "title": "软件程序资源",
@@ -433,6 +480,7 @@
         ]
     },
     {
+        "_id": "ai",
         "icon": "ai-generate-2",
         "href": "#AI工具",
         "title": "AI工具",
@@ -464,6 +512,7 @@
         ]
     },
     {
+        "_id": "study",
         "icon": "book-2-line",
         "href": "#教程/学习",
         "title": "教程/学习",
@@ -489,6 +538,7 @@
         ]
     },
     {
+        "_id": "play",
         "icon": "game-line",
         "href": "#休闲娱乐",
         "title": "休闲娱乐",

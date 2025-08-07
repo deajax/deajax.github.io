@@ -1,5 +1,5 @@
 [
-        {
+    {
         "_id": "common",
         "icon": "anchor-fill",
         "href": "#常用导航",
@@ -206,6 +206,36 @@
                 "description": "变量命名神器",
                 "url": "https://unbug.github.io/codelf/",
                 "icon": "https://unbug.github.io/codelf/images/codelf_logo.f4ae25bd.png"
+            },
+            {
+                "icon": "https://tool.liumingye.cn/unlock-music/favicon.ico",
+                "description": "解锁QQ音乐网易云音乐加密的ncm,mflac,mgg等音频文件",
+                "title": "加密音乐文件解锁",
+                "url": "https://tool.liumingye.cn/unlock-music/"
+            },
+            {
+                "icon": "https://favicon.im/tool.liumingye.cn",
+                "description": "提供VIP解析服务，让你省去购买视频VIP费用",
+                "title": "VIP在线视频解析",
+                "url": "https://tool.liumingye.cn/video/"
+            },
+            {
+                "icon": "https://favicon.im/tool.liumingye.cn",
+                "description": "可提供32位,16位等MD5在线加密",
+                "title": "MD5加密工具",
+                "url": "https://tool.liumingye.cn/md5/"
+            },
+            {
+                "icon": "https://favicon.im/tool.liumingye.cn",
+                "description": "可根据选择生成不同字符不同长度的随机密码",
+                "title": "随机密码生成器",
+                "url": "https://tool.liumingye.cn/password/"
+            },
+            {
+                "icon": "https://favicon.im/www.remove.bg",
+                "description": "轻松实现一键抠图，只需上传图片，无需其他操作，即可100%自动去除图片背景",
+                "title": "在线抠图软件",
+                "url": "https://www.remove.bg/zh"
             }
         ]
     },

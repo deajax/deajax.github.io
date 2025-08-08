@@ -142,8 +142,8 @@
 						<div
 							:id="item.title"
 							class="mb-16"
-							v-for="(item, index) in processedDataList"
-							:key="index"
+							v-for="item in processedDataList"
+							:key="item._id"
 						>
 							<div v-if="item.list && item.list.length > 0">
 								<div class="mb-8 flex items-center">
@@ -162,7 +162,13 @@
 							affix
 							:offsetTop="150"
 							:get-current-anchor="getCurrentAnchor"
-							:items="dataList"
+							:items="
+								toolbox.map((item) => ({
+									key: item.title,
+									href: `#${item.title}`,
+									title: item.title,
+								}))
+							"
 							:targetOffset="48"
 						/>
 					</a-layout-sider>
@@ -227,9 +233,7 @@
 					<li>
 						有些导航可能下载资源需要收费，本着只分享免费资源的原则，如果遇到了请提醒我删除。
 					</li>
-					<li>
-						有些导航可能会失效，如果有失效的链接请提醒我删除。
-					</li>
+					<li>有些导航可能会失效，如果有失效的链接请提醒我删除。</li>
 					<li>如果我的导航侵犯了您的权益，请联系我，我会及时删除。</li>
 					<li>
 						本站使用vue3+vite+less构建、ant-design-vue组件库、remixicon图标库以及tailwindcss。感谢以上。
@@ -242,9 +246,9 @@
 
 <script setup>
 	import { ref, computed, watch, onMounted } from "vue";
+	import cloudbase from "@cloudbase/js-sdk";
 	import { theme, message } from "ant-design-vue";
 	import dataSource from "@/components/dataSource.vue";
-	import data from "@/data.json";
 
 	// 对话框
 	const showModal = ref(false);
@@ -258,17 +262,66 @@
 	// R18显示开关
 	const showR18 = ref(false);
 
-	// 卡片列表数据
-	const dataList = ref(data);
+	// 获取模型
+	let cachedApp = null;
+	const getModels = async () => {
+		try {
+			if (!cachedApp) {
+				cachedApp = cloudbase.init({
+					env: import.meta.env.VITE_CLOUDBASE_ENV_ID,
+				});
+				const auth = cachedApp.auth({
+					persistence: "local",
+				});
+				await auth.signInAnonymously();
+			}
+			return cachedApp.models;
+		} catch (error) {
+			console.error("CloudBase initialization error:", error);
+			throw error;
+		}
+	};
+
+	const fetchTodos = async () => {
+		try {
+			const models = await getModels();
+
+			if (!models || !models.toolbox) {
+				console.error("Toolbox model not found");
+				message.error("数据模型未找到");
+				return;
+			}
+
+			const result = await models.toolbox.list({
+				filter: { where: {} },
+				pageSize: 100,
+				pageNumber: 1,
+				getCount: true,
+				// 移除 envType 或根据实际情况设置
+			});
+
+			if (result && result.data && result.data.records) {
+				toolbox.value = result.data.records;
+			} else {
+				console.warn("No data received from database");
+				message.warning("未获取到数据");
+			}
+		} catch (error) {
+			console.error("Failed to get toolbox:", error);
+			message.error(`获取数据失败: ${error.message || error}`);
+		}
+	};
+
+	const toolbox = ref([]);
 
 	// 处理后的数据列表（根据R18开关过滤）
 	const processedDataList = computed(() => {
 		if (showR18.value) {
 			// 显示所有内容，包括R18
-			return dataList.value;
+			return toolbox.value;
 		} else {
 			// 过滤掉包含R18=true的项目
-			return dataList.value
+			return toolbox.value
 				.map((category) => ({
 					...category,
 					list: category.list?.filter((item) => !item.r18) || [],
@@ -418,6 +471,8 @@
 				updateThemeAttribute();
 			}
 		});
+
+		fetchTodos();
 	});
 </script>
 

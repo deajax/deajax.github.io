@@ -12,6 +12,24 @@
                 "icon": "https://www.google.com/s2/favicons?sz=64&domain=baidu.com"
             },
             {
+                "title": "百度翻译",
+                "description": "领先的AI大模型翻译",
+                "url": "https://fanyi.baidu.com/",
+                "icon": "https://fanyi.baidu.com/favicon.ico"
+            },
+            {
+                "title": "百度地图",
+                "description": "浏览地图、搜索地点、查询公交驾车线路、查看实时路况，您的出行指南、生活助手",
+                "url": "https://map.baidu.com/",
+                "icon": "https://map.baidu.com/favicon.ico"
+            },
+            {
+                "title": "百度网盘",
+                "description": "百度网盘为您提供文件的网络备份、同步和分享服务",
+                "url": "https://pan.baidu.com/",
+                "icon": "https://nd-static.bdstatic.com/m-static/v20-main/favicon-main.ico"
+            },
+            {
                 "title": "Google 谷歌",
                 "description": "汇整全球信息，供大众使用，使人人受惠",
                 "url": "https://www.google.com/",
@@ -30,6 +48,12 @@
                 "url": "https://github.com/",
                 "icon": "https://github.githubassets.com/favicons/favicon.svg",
                 "vpn": true
+            },
+            {
+                "title": "豆瓣电影",
+                "description": "豆瓣电影提供最新的电影介绍及评论",
+                "url": "https://movie.douban.com",
+                "icon": "https://img1.doubanio.com/favicon.ico"
             },
             {
                 "title": "淘宝",
@@ -66,24 +90,6 @@
                 "description": "CSDN是全球知名中文IT技术交流平台",
                 "url": "https://www.csdn.net/",
                 "icon": "https://g.csdnimg.cn/static/logo/favicon32.ico"
-            },
-            {
-                "title": "百度翻译",
-                "description": "领先的AI大模型翻译",
-                "url": "https://fanyi.baidu.com/",
-                "icon": "https://fanyi.baidu.com/favicon.ico"
-            },
-            {
-                "title": "百度地图",
-                "description": "浏览地图、搜索地点、查询公交驾车线路、查看实时路况，您的出行指南、生活助手",
-                "url": "https://map.baidu.com/",
-                "icon": "https://map.baidu.com/favicon.ico"
-            },
-            {
-                "title": "百度网盘",
-                "description": "百度网盘为您提供文件的网络备份、同步和分享服务",
-                "url": "https://pan.baidu.com/",
-                "icon": "https://nd-static.bdstatic.com/m-static/v20-main/favicon-main.ico"
             }
         ]
     },
@@ -208,34 +214,40 @@
                 "icon": "https://unbug.github.io/codelf/images/codelf_logo.f4ae25bd.png"
             },
             {
-                "icon": "https://tool.liumingye.cn/unlock-music/favicon.ico",
-                "description": "解锁QQ音乐网易云音乐加密的ncm,mflac,mgg等音频文件",
                 "title": "加密音乐文件解锁",
-                "url": "https://tool.liumingye.cn/unlock-music/"
+                "description": "解锁QQ音乐网易云音乐加密的ncm,mflac,mgg等音频文件",
+                "url": "https://tool.liumingye.cn/unlock-music/",
+                "icon": "https://tool.liumingye.cn/unlock-music/favicon.ico"
             },
             {
-                "icon": "https://favicon.im/tool.liumingye.cn",
-                "description": "提供VIP解析服务，让你省去购买视频VIP费用",
                 "title": "VIP在线视频解析",
-                "url": "https://tool.liumingye.cn/video/"
+                "description": "提供VIP解析服务，让你省去购买视频VIP费用",
+                "url": "https://tool.liumingye.cn/video/",
+                "icon": "https://favicon.im/tool.liumingye.cn"
             },
             {
-                "icon": "https://favicon.im/tool.liumingye.cn",
                 "description": "可提供32位,16位等MD5在线加密",
                 "title": "MD5加密工具",
-                "url": "https://tool.liumingye.cn/md5/"
+                "url": "https://tool.liumingye.cn/md5/",
+                "icon": "https://favicon.im/tool.liumingye.cn"
             },
             {
-                "icon": "https://favicon.im/tool.liumingye.cn",
-                "description": "可根据选择生成不同字符不同长度的随机密码",
                 "title": "随机密码生成器",
-                "url": "https://tool.liumingye.cn/password/"
+                "description": "可根据选择生成不同字符不同长度的随机密码",
+                "url": "https://tool.liumingye.cn/password/",
+                "icon": "https://favicon.im/tool.liumingye.cn"
             },
             {
-                "icon": "https://favicon.im/www.remove.bg",
-                "description": "轻松实现一键抠图，只需上传图片，无需其他操作，即可100%自动去除图片背景",
                 "title": "在线抠图软件",
-                "url": "https://www.remove.bg/zh"
+                "description": "轻松实现一键抠图，只需上传图片，无需其他操作，即可100%自动去除图片背景",
+                "url": "https://www.remove.bg/zh",
+                "icon": "https://favicon.im/www.remove.bg"
+            },
+            {
+                "title": "PDF24 Tools",
+                "description": "免费且易于使用的在线PDF工具",
+                "url": "https://tools.pdf24.org/zh/",
+                "icon": "https://favicon.im/tools.pdf24.org"
             }
         ]
     },
@@ -628,12 +640,6 @@
                 "icon": "https://img-static.mihoyo.com/favicon.ico"
             },
             {
-                "title": "天空岛数据库",
-                "description": "原神深境螺旋使用率数据统计排名",
-                "url": "https://www.youngmoe.com/weapon",
-                "icon": "https://favicon.im/www.youngmoe.com?larger=true"
-            },
-            {
                 "title": "原神抽卡记录分析工具",
                 "description": "原神抽卡记录分析工具",
                 "url": "http://genshin.voderl.cn/",
@@ -643,7 +649,8 @@
                 "title": "Paimon.moe",
                 "description": "Your best Genshin Impact companion!",
                 "url": "https://paimon.moe/",
-                "icon": "https://paimon.moe/favicon.png"
+                "icon": "https://paimon.moe/favicon.png",
+                "vpn": true
             },
             {
                 "title": "时速游戏站",

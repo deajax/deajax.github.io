@@ -16,9 +16,6 @@ export default defineConfig({
       ],
     })
   ],
-  build: {
-    outDir: '../'
-  },
   base: './',
   resolve: {
     alias: {

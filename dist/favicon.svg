@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 31.9 32">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#_未命名的渐变_2);
+      }
+
+      .st1 {
+        fill: #fc0;
+      }
+
+      .st2 {
+        fill: url(#_未命名的渐变);
+      }
+    </style>
+    <linearGradient id="_未命名的渐变" data-name="未命名的渐变" x1="14.8" y1="1592.2" x2="16.4" y2="1572.1" gradientTransform="translate(0 -1566)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#41d1ff"/>
+      <stop offset="1" stop-color="#bd34fe"/>
+    </linearGradient>
+    <linearGradient id="_未命名的渐变_2" data-name="未命名的渐变 2" x1="15.4" y1="1594.3" x2="17" y2="1573.1" gradientTransform="translate(0 -1566)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#41d1ff"/>
+      <stop offset="1" stop-color="#bd34fe"/>
+    </linearGradient>
+  </defs>
+  <path class="st2" d="M28,14.1v-4.9c0-1.9-1.6-3.4-3.4-3.4H7.4c-1.9,0-3.4,1.6-3.4,3.4v4.9h24Z"/>
+  <path class="st0" d="M3.9,17v7.1c0,1.9,1.6,3.4,3.4,3.4h17.2c1.9,0,3.4-1.6,3.4-3.4v-7.1H3.9Z"/>
+  <path class="st1" d="M20.6,0l-10.6,2.1c-.2,0-.3.2-.3.3l-.7,11c0,.2.2.3.3.3h0l2.9-.7c.3,0,.5.2.5.5l-.9,4.3c0,.3.2.6.5.5l1.8-.6c.3,0,.6.2.5.5l-1.5,6.8c0,.3.5.7.7.3l.2-.3L22.9,7.9c.2-.3,0-.6-.3-.6l-3.1.6c-.3,0-.6-.2-.5-.5l2.1-6.8c0-.3-.3-.6-.5-.5h0,0Z"/>
+</svg>

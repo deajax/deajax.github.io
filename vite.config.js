@@ -1,5 +1,5 @@
+import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vite'
-import path from 'path';
 import vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite';
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers';
@@ -16,13 +16,13 @@ export default defineConfig({
       ],
     })
   ],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src')
-    }
-  },
   build: {
     outDir: '../'
   },
-  base: './'
+  base: './',
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    }
+  },
 })

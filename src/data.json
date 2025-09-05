@@ -518,6 +518,12 @@
                 "description": "PC Game Cheats and Mods",
                 "url": "https://flingtrainer.com/",
                 "icon": "https://favicon.im/flingtrainer.com?larger=true"
+            },
+            {
+                "title": "KOYSO",
+                "description": "一个无限制的PC游戏网站",
+                "url": "https://koyso.to/",
+                "icon": "https://favicon.im/koyso.to"
             }
         ]
     },
@@ -550,6 +556,12 @@
                 "description": "一站式AI创作平台",
                 "url": "https://jimeng.jianying.com/",
                 "icon": "https://lf3-lv-buz.vlabstatic.com/obj/image-lvweb-buz/common/images/dreamina-v5.ico"
+            },
+            {
+                "title": "百度AI",
+                "description": "办公学习一站解决",
+                "url": "https://chat.baidu.com/",
+                "icon": "https://favicon.im/www.baidu.com"
             }
         ]
     },
@@ -576,6 +588,12 @@
                 "description": "cnblogs",
                 "url": "https://www.cnblogs.com/lhb25/p/css-and-css3-triangle.html",
                 "icon": ""
+            },
+            {
+                "title": "Deajax - 博客园",
+                "description": "Deajax的博客园",
+                "url": "https://www.cnblogs.com/deajax",
+                "icon": "https://favicon.im/www.cnblogs.com"
             }
         ]
     },
